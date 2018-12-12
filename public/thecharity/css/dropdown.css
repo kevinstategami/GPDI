@@ -1,0 +1,76 @@
+nav, ul {
+    height: 100% !important;
+}
+nav > ul > li {
+    transition: color 120ms;
+    display: inline-flex;
+    align-items: center;
+}
+nav > ul > li:hover {
+    border-bottom: none solid #0080EF;
+    color: #0080EF !important;
+}
+nav > ul > li {
+    cursor: pointer;
+}
+nav > ul > li > a {
+    display: inline-flex;
+    align-items: center;
+    color: inherit !important;
+    border-bottom: none !important;
+    padding: 0 !important;
+}
+nav > ul > li:not(.dropdown_button) a {
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+}
+#parent_dropdown {
+    overflow: visible !important;
+}
+.dropdown_button:hover .mydropdown {
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+}
+.mydropdown {
+    height: 0 !important;
+    visibility: hidden;
+    opacity: 0;
+    border: 1px solid gray;
+    box-shadow: 0 0 4px #c1c1c1;
+    max-width: none !important;
+    position: relative !important;
+    z-index: 999999 !important;
+    background-color: white !important;
+    width: auto !important;
+    padding: 10px !important;
+}
+.mydropdown > li {
+    height: 40px !important;
+    margin: 0 !important;
+}
+.mydropdown > li > a {
+    border-bottom: none !important;
+    height: 100% !important;
+    display: block !important;
+    line-height: 40px !important;
+    padding: 0 !important;
+}   
+@media screen and (min-width: 768px) {
+    .mydropdown {
+        left: 0 !important;
+    top: 0 !important;
+        position: absolute !important;
+         top: 96px !important;
+        min-width: 200px !important;
+    }
+}
+
+.tabs-nav{
+    height:50px !important;
+}
+
+[class*='swiper-button']{
+    background: #0080EF !important;
+}
