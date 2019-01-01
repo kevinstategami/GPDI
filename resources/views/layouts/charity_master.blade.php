@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="{{ asset('thecharity/css/elegant-fonts.css') }}">
     <link rel="stylesheet" href="{{ asset('thecharity/css/themify-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('thecharity/css/swiper.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('thecharity/css/dropdown.css') }}">
-    <link rel="stylesheet" href="{{ asset('thecharity/style.css') }}">    
+		<link rel="stylesheet" href="{{ asset('thecharity/css/dropdown.css') }}">
+    <link rel="stylesheet" href="{{ asset('thecharity/style.css') }}">
 </head>
 <body class="single-page elements-page">
     <header class="site-header">
@@ -42,21 +42,21 @@
                 <div class="row">
                     <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
                         <div class="site-branding d-flex align-items-center">
-                           <a class="d-block" href="{{url('/')}}" rel="home"><img class="d-block" style="width:21%;" src="{{asset('gambar/GPDI_logo.png')}}" alt="logo"></a>
+                           <a class="d-block" href="{{url('/')}}" rel="home"><img class="d-block" src="{{asset('gambar/GPDI_logo.png')}}" alt="logo"></a>
                         </div><!-- .site-branding -->
 
-                        <nav class="site-navigation d-flex justify-content-end align-items-center">
-                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center" id="parent_dropdown">                                                                 
-                                   <li class="current-menu-item"><a href="{{url('/')}}">Beranda</a></li>                                   
+                        <nav class="site-navigation d-flex align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center" id="parent_dropdown">
+                                   <li class="current-menu-item"><a href="{{url('/')}}">Beranda</a></li>
                                    <li>
                                         <a href="{{url('jadwalibadah')}}">Jadwal Ibadah</a>
-                                    </li>                                    
+                                    </li>
                                     <li>
                                         <a href="{{url('gallery')}}">Gallery</a>
-                                    </li>                                    
+                                    </li>
                                     <li>
-                                        <a href="{{url('wadah')}}">Wadah</a>                                        
-                                    </li>                                                                                                            
+                                        <a href="{{url('wadah')}}">Wadah</a>
+                                    </li>
                                     <li class="position-relative dropdown_button"><a href="javascript:void(0);">Info Rohani</a>
                                         <ul class="mydropdown">
                                             <li><a href=" {{url('info_rohani/ringkasankhotbah')}} ">Ringkasan Khotbah</a></li>
@@ -119,7 +119,7 @@
                             </ul>
                         </div><!-- .foot-about -->
                     </div><!-- .col -->
-                                      
+
 
                     <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
                         <div class="foot-contact">
@@ -168,6 +168,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src='{{ asset("thecharity/js/circle-progress.min.js") }}'></script>
     <script src="{{ asset('thecharity/js/jquery.countTo.min.js') }}"></script>
     <script src="{{ asset('thecharity/js/jquery.barfiller.js') }}"></script>
-	<script src="{{ asset('thecharity/js/custom.js') }}"></script>    
+	<script src="{{ asset('thecharity/js/custom.js') }}"></script>
 </body>
 </html>
